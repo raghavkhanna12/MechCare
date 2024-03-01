@@ -1,0 +1,76 @@
+<html>
+    <body>
+<div>
+    <link href="./form.css" rel="stylesheet" />
+    <div class="desktop2-container">
+      <div class="desktop2-desktop2">
+        <img
+          src="./images/v6_3.png"
+          alt="image5146"
+          class="desktop2-image5"
+        />
+        <img
+          class="desktop2-image1"
+        />
+        <img
+          class="desktop2-rectangle1"
+        />
+        <div class="desktop2-group2">
+          <img
+            src="./images/mcarelogo.png"
+            alt="Ellipse11411"
+            class="desktop2-ellipse1"
+          />
+        </div>
+        <div class="desktop2-group14">
+          <img
+            src="./images/login.png"
+            alt="Ellipse121415"
+            class="desktop2-ellipse12"
+          />
+          <img
+            class="desktop2-userfill"
+          />
+        </div>
+        <div class="desktop2-group8">
+          <img
+            src="./images/helpdesk.png"
+            alt="Ellipse111418"
+            class="desktop2-ellipse11"
+          />
+        </div>
+        <span class="desktop2-text04"><span>MechCare</span></span>
+        <div
+          class="desktop2-rectangle9"
+        />
+        <form class="formed" method="POST" action="{{ url_for('predict') }}">
+            <h1>Machine's Details: </h1>
+            <p>Type <input type="number" name="tip" placeholder="Enter type"></p>
+            <p>Air temperature [K] <input type="number" name="airtemp" placeholder="Enter Air temperature"></p>
+            <p>Process temperature [K] <input type="number" name="processtemp" placeholder="Enter Process temperature"></p>
+            <p>Rotational speed [rpm] <input type="number" name="rotspeed" placeholder="Enter Rotational speed"></p>
+            <p>Torque [Nm] <input type="number" name="torque" placeholder="Enter Torque"></p>
+            <p>Tool wear [min] <input type="number" name="toolwear" placeholder="Enter Tool wear"></p>
+            <input type="submit">
+                </form>
+                    <div>
+                      <p class="res">RESULT</p>
+                      <textarea class="op">{{result}}</textarea>
+                  </div>
+          
+        <!-- <form class="formed" method="POST" action="{{ url_for('predict') }}">
+            <h1>Machine's Details: </h1>
+            <p>Type <input type="number" name="tip" placeholder="Enter type"></p>
+            <p>Air temperature [K] <input type="number" name="airtemp" placeholder="Enter Air temperature"></p>
+            <p>Process temperature [K] <input type="number" name="processtemp" placeholder="Enter Process temperature"></p>
+            <p>Rotational speed [rpm] <input type="number" name="rotspeed" placeholder="Enter Rotational speed"></p>
+            <p>Torque [Nm] <input type="number" name="torque" placeholder="Enter Torque"></p>
+            <p>Tool wear [min] <input type="number" name="toolwear" placeholder="Enter Tool wear"></p>
+            <input type="submit">
+                </form> -->
+        
+    </div>
+  </div>
+  </div>
+  </html>
+  
